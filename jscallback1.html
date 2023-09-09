@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1 id="demo"></h1>
+<script>
+function my(x){
+document.getElementById("demo").innerHTML=x;
+}
+
+function myCalc(num1,num2, mycall){
+let res = num1+num2;
+mycall(res);
+}
+
+myCalc(67,567,my);
+</script>
+</body>
+</html>

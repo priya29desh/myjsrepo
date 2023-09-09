@@ -1,0 +1,29 @@
+<!--Input Event - its an interface that reperesents an event notifying user of editable content changes-->
+<html>
+<head>
+<script>
+const log = document.getElementById("log");
+const editable = document.querySelector("div[contenteditable]");
+editable.addEventListener("input",logInputType);
+
+function logInputType(event){
+log.textContent = `Input type : ${event.inputType}`;
+}
+</script>
+</head>
+<body>
+<p id="log"> Input Type : </p>
+<div contenteditable="true" style="padding:10px;margin:10px; border:2px solid blue;"> 
+<p>
+Some sample text. Try insert line break or delete text
+ <p>
+<hr>
+<ul>
+<li>Sample</li>
+<li> List </li>
+</ul>
+<p>
+Some Sample text </p>
+</div>
+</body>
+</html>
