@@ -1,0 +1,18 @@
+<html>
+    <head>
+       <script type="text/javascript">
+           function showdata()
+           {
+                var str=document.getElementById("txtstr").value;
+                document.getElementById("mylocation").innerText=str;
+           }
+       </script>
+   </head>
+   <body>
+   <form name="myform">
+    Enter a string : <input type="text" id="txtstr" >
+    <br><input type="button" value="Show Data" onclick="showdata()"/>
+   <br> You have entered : <div id="mylocation"></div>
+   </form>
+   </body>
+</html>
